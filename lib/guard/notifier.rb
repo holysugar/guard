@@ -49,6 +49,7 @@ module Guard
     require 'guard/notifiers/terminal_notifier'
     require 'guard/notifiers/terminal_title'
     require 'guard/notifiers/tmux'
+    require 'guard/notifiers/blink1'
 
     extend self
 
@@ -66,7 +67,8 @@ module Guard
       ],
       [[:emacs,             ::Guard::Notifier::Emacs]],
       [[:tmux,              ::Guard::Notifier::Tmux]],
-      [[:terminal_title,    ::Guard::Notifier::TerminalTitle]]
+      [[:terminal_title,    ::Guard::Notifier::TerminalTitle]],
+      [[:blink1,            ::Guard::Notifier::Blink1]]
     ]
 
     # Get the available notifications.

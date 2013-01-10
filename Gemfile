@@ -35,6 +35,8 @@ group :development do
     gem 'rb-notifu', '>= 0.0.4', :require => false
     gem 'wdm', :require => false
   end
+
+  gem 'rb-blink1', :require => false
 end
 
 # The test group will be
